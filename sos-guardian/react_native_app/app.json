@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "SOS Guardian",
+    "slug": "sos-guardian",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0F172A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sosguardian.emergency",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SOS Guardian needs your location to attach exact GPS coordinates and Google Maps links to emergency alerts.",
+        "NSBluetoothAlwaysUsageDescription": "SOS Guardian connects to BLE panic buttons, smartwatches, and emergency fobs.",
+        "LSApplicationQueriesSchemes": ["whatsapp", "tel", "sms"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      },
+      "package": "com.sosguardian.emergency",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CALL_PHONE",
+        "SEND_SMS",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT"
+      ]
+    }
+  }
+}
